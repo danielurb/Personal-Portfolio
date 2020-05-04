@@ -16,7 +16,9 @@
 
 /* box sizing and font sizing */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -36,7 +38,7 @@ html {
 /* 980 px */
 @media (max-width: 61.25em) {
   html {
-    font-size:58%;
+    font-size: 58%;
   }
 }
 
@@ -57,7 +59,8 @@ body {
   color: var(--main-white);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-align: center;
@@ -170,9 +173,9 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  width: 100%; 
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto; 
+  margin: 0 auto;
   margin-bottom: 6rem;
 }
 
@@ -197,7 +200,11 @@ img {
   transition: color 0.3s ease-out;
 }
 
-.project:hover .code {
+/* .project:hover .code {
+  color: #ff7f50;
+} */
+
+p.project-title:hover .code {
   color: #ff7f50;
 }
 
@@ -205,6 +212,10 @@ img {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+}
+
+.project-image-face {
+  height: 80%;
 }
 
 .project-title {
@@ -215,7 +226,7 @@ img {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 2px;;
+  border-radius: 2px;
 }
 
 .btn-show-all {
@@ -235,11 +246,11 @@ img {
 }
 
 .btn-show-all:hover > .fa-chevron-right {
-  transform: translateX(7px)
+  transform: translateX(7px);
 }
 
 .btn-show-all:hover > .fa-chevron-left {
-  transform: translateX(-7px)
+  transform: translateX(-7px);
 }
 
 /* contact section */
@@ -265,8 +276,6 @@ img {
     font-size: 4rem;
   }
 }
-
-
 
 .contact-section-header > p {
   font-style: italic;
